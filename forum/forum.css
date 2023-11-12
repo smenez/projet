@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(29, 29, 29);
+    color: white;
+}
+
+header {
+    position: fixed;
+    background-color: rgb(29, 29, 29);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 30px 0px 30px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 20px;
+}
+
+header > div:first-child {
+    max-width: 300px;
+}
+
+header img {
+    width: 100%;
+    height: auto;
+}
+
+header ul {
+    list-style-type: none;
+}
+
+header li::first-letter, h1::first-letter, h2::first-letter {
+    color: goldenrod;
+    font: 150% 'Dancing Script', cursive;
+}
+
+li {
+    display: inline-block;
+    margin: 20px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+#toggleButton{
+    height: 40px;
+    width: 40px;
+    margin: 20px 10px 0px 0px;
+}
+
+#Menu {
+  display: none;
+}
+
+#Menu ul {
+  list-style: none;
+  padding: 0;
+}
+
+#Menu ul li {
+  display: inline-block;
+  margin: 20px;
+}
+
+main {
+    background-color: rgb(40, 40, 40);
+    margin-left: 200px;
+    margin-right: 200px;
+    padding: 100px 50px 30px 80px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 60px;
+    padding-bottom: 0px;
+    margin: 30px;
+}
+
+h2{
+    font-weight: 400;
+}

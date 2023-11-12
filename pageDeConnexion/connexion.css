@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: white;
+    background-image: url("https://www.farthestfrontier.com/wp-content/uploads/sites/2/2023/10/showcase_06.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+section {
+    background-color: rgb(29, 29, 29);
+    height: 500px;
+    width: 30%;
+    margin: auto;
+    margin-top: 12%;
+}
+
+header li::first-letter, h1::first-letter, h2::first-letter {
+    color: goldenrod;
+    font: 150% 'Dancing Script', cursive;
+}
+
+h1{
+    font-size: 60px;
+    text-align: center;
+    margin-bottom: 40px;
+    padding-top: 20px;
+}
+
+.input{
+    margin-bottom: 20px;
+    margin-left: 10%;
+}
+
+p{
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+.input input{
+    width: 90%;
+    height: 30px;
+    background-color: rgb(40, 40, 40);
+    text-align: center;
+    border: none;
+}
+
+.checkbox{
+    border: none;
+    margin-left: 10%;
+}
+
+button{
+    margin: 5% 30% 0% 30%;
+    width: 40%;
+    height: 50px;
+    background: linear-gradient(to right, rgb(218, 159, 32), rgb(255, 187, 0));
+    border: none;
+    cursor: pointer;
+}
+
+button:hover{
+    background: linear-gradient(to right, rgb(228, 169, 22), rgb(255, 197, 0))
+}

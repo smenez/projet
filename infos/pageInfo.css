@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(29, 29, 29);
+    color: white;
+}
+
+header {
+    position: fixed;
+    background-color: rgb(29, 29, 29);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 30px 0px 30px;
+    text-align: center;
+    font-size: 20px;
+}
+
+/* > = fils directs au header */
+header > div:first-child {
+    max-width: 300px;
+}
+
+header img {
+    width: 100%;
+    height: auto;
+}
+
+header ul {
+    list-style-type: none;
+}
+
+header li::first-letter, h1::first-letter, h2::first-letter {
+    color: goldenrod;
+    font: 150% 'Dancing Script', cursive;
+}
+
+li {
+    display: inline-block;
+    margin: 20px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+#toggleButton{
+    height: 40px;
+    width: 40px;
+    margin: 20px 10px 0px 0px;
+}
+
+#Menu {
+  display: none;
+}
+
+#Menu ul {
+  list-style: none;
+  padding: 0;
+}
+
+#Menu ul li {
+  display: inline-block;
+  margin: 20px;
+}
+
+main > p{
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+main {
+    background-color: rgb(40, 40, 40);
+    margin-left: 200px;
+    margin-right: 200px;
+    padding-top: 120px;
+}
+
+h1{
+    text-align: center;
+    font-size: 60px;
+    padding: 40px 0px 40px 0px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 40px;
+    font-weight: 400;
+}
+
+.paragraphe{
+    margin: 50px;
+    display: flex;
+}
+
+.paragraphe1{
+    margin: 30px;
+    text-align: center;
+}
+
+.paragraphe2{
+    margin: 30px;
+    margin-top: 10%;
+    text-align: center;
+}
+
+
+@media (max-width: 1024px) {
+    .paragraphe_image {
+        flex-direction: column;
+    }
+
+    section {
+        padding: 30px;
+        margin-right: 30px;
+        margin-left: 30px;
+    }
+
+    .titre {
+        margin-right: 0px;
+        margin-left: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .paragraphe_image {
+        margin: 20px 0px 20px 0px;
+    }
+
+    .paragraphe_image>* {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    header > div:first-child {
+    max-width: 280px;
+}
+}
+
+@media (max-width: 860px) {
+    header {
+        flex-direction: column;
+    }
+
+    li {
+        margin: 5px;
+        font-size: 80%;
+    }
+
+    main {
+        padding: 10px 20px;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+}
+
+@media (max-width: 320px) {
+    li {
+        font-size: 60%;
+    }
+
+    main {
+        padding: 5px 10px;
+    }
+    .paragraphe_image {
+        margin: 0px;
+    }
+
+}
