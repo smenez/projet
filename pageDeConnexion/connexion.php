@@ -17,7 +17,8 @@
             <h1>Connexion</h1>
         </header>
         <main>
-            <div id="Onglet">
+            <!-- lignes à changé pour être en php -->
+            <form id="Onglet">
                 <div class="input">
                     <p>EMAIL OU NOM D'UTILISATEUR</p>
                     <input type="email" name="Email"><br>
@@ -29,9 +30,11 @@
                 <div class="checkbox">
                     <input type="checkbox" name="Checkbox"> Se souvenir de moi
                 </div>
-                <Button>Se connecter</Button>
-            </div>
+                <input type="submit">Se connecter</Button>
+            </form>
         </main>
     </section>
+
+    <script ></script>
 </body>
 </html>

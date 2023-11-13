@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+php<!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
@@ -22,13 +22,13 @@
             <li><a href="https://www.youtube.com/c/crateentertainment" target="_blank">Youtube</a></li>
             <li><a href="https://www.twitch.tv/crateentertainment" target="_blank">Twitch</a></li>
             <li><a href="https://twitter.com/crate_frontier" target="_blank">Twitter</a></li>
-            <li><a href="../forum/forum.html">Forum</a></li>
-            <li><a href="../announcement/announcement.html">Announcement</a></li>
+            <li><a href="../forum/forum.php">Forum</a></li>
+            <li><a href="../announcement/announcement.php">Announcement</a></li>
         </ul>
         <button id="toggleButton"><img src="https://cdn-icons-png.flaticon.com/512/10080/10080458.png" alt="déroulant"></button>
         <nav id="Menu">
             <ul>
-                <li><button>Connexion</button></li>
+                <li><button><a href="../pageDeConnexion/connexion.php">Connexion</a></button></li>
                 <li><button>S'inscrire</button></li>
             </ul>
         </nav>
