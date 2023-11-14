@@ -30,7 +30,7 @@
         <nav id="Menu">
             <ul>
                 <li><button><a href="../pageDeConnexion/connexion.php">Connexion</a></button></li>
-                <li><button>S'inscrire</button></li>
+                <li><button><a href="../pageInscription/index.php">S'inscrire</a></button></li>
             </ul>
         </nav>
         

@@ -18,9 +18,9 @@
         </header>
         <main>
             <!-- lignes à changé pour être en php -->
-            <form id="Onglet">
+            <form action="traitementConnexion.php" method="POST">
                 <div class="input">
-                    <p>EMAIL OU NOM D'UTILISATEUR</p>
+                    <p>EMAIL</p>
                     <input type="email" name="Email"><br>
                 </div>
                 <div class="input">
@@ -30,7 +30,9 @@
                 <div class="checkbox">
                     <input type="checkbox" name="Checkbox"> Se souvenir de moi
                 </div>
-                <button>Se connecter</Button>
+                <div id=Connexion>
+                <input type="submit" name="Connexion" placeholder="Connexion">
+                </div>
             </form>
         </main>
     </section>
