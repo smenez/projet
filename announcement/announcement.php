@@ -14,7 +14,7 @@
 <body>
     <header> <!--Partie haute-->
         <div>
-            <a href="../index/index.html">   
+            <a href="../index/index.php">   
             <img src="https://www.farthestfrontier.com/wp-content/uploads/sites/2/2020/11/cropped-farthest_frontier_game_logo_800px_white.png" alt="logo"></a>
         </div>
         <ul>
