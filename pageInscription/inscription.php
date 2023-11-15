@@ -1,4 +1,4 @@
-<!-- *page html qui va arriver* -->
+<!-- *page html qui va arriver -->
 
 <!DOCTYPE html>
 <html lang="fr">

@@ -3,28 +3,28 @@
 require_once "PDO.php";
 
 if (isset($_POST['Connexion'])){
-    if(empty($_POST['Email'] || $_POST['Email'])){
+    if(empty($_POST['Email'] || $_POST['Password'])){
         echo "mauvais";
     }else{
     $motDePasse = $_POST['Password'];
     $email = $_POST['Email'];
     }
-}  
+}
 
-$email = $_POST['Email'];
-$password = $_POST['Password'];
-$sql = "SELECT email_u FROM user WHERE email_u=:email";
+$sql= "SELECT * FROM user WHERE email_u=:email_u";
 $requete = $connexion->prepare($sql);
-// $requete->bindValue(":email_u", $email);
-$resultat = $requete->execute(['email_u'=>$email]);
-// fetch permet de récupérer toutes les données liées à l'email
-$data = $resultat->fetch(PDO::FETCH_ASSOC);
-// pour vérifier les deux mots de passe : password_verify
+$requete->bindValue(":email_u", $email);
+$requete->execute();
+$data = $requete->fetch(PDO::FETCH_ASSOC);
 
 if($data){
-    if(password_verify(":motDePasse_u", $motDePasse)){
-        echo "connexion réussie";
+    if(password_verify($motDePasse, $data['motDePasse_u'])){
+        echo "Connexion réussie";
     }else{
-        echo "connexion échouée";
+        echo "Erreur de mot de passe";
     }
+}else{
+    echo "l'utilisateur n'existe pas";
 }
+
+?>

@@ -31,7 +31,11 @@ h1{
     padding-top: 20px;
 }
 
-.input{
+#invisible{
+    display: none;
+}
+
+.input{ 
     margin-bottom: 20px;
     margin-left: 10%;
 }
@@ -54,7 +58,7 @@ p{
     margin-left: 10%;
 }
 
-button{
+#button{
     margin: 5% 30% 0% 30%;
     width: 40%;
     height: 50px;
@@ -63,6 +67,6 @@ button{
     cursor: pointer;
 }
 
-button:hover{
+#button:hover{
     background: linear-gradient(to right, rgb(228, 169, 22), rgb(255, 197, 0))
 }
