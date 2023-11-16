@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/connexion.css">
     <title><?php echo $pageTitle; ?></title>
     <!--Police d'écriture Dancing-->
+    <link rel="icon" href="images/favicon.ico" type="icone">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Collegiate+One&family=Dancing+Script&display=swap" rel="stylesheet">

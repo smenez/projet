@@ -15,23 +15,12 @@
     $requete->execute();
     $listMessages = $requete->fetchAll(PDO::FETCH_ASSOC);
 
-    $pageTitle = 'Accueil';
+    $pageTitle = 'Forum';
     require_once('includes/head.php');
     require_once('includes/header.php');
 ?>
     <main id=forum>
         <h1>Forum</h1>
-        <!-- Pour afficher tous les messages -->
-        <?php
-            foreach ($listMessages as $message) {
-                echo '<p>';
-                echo $message['pseudo'];
-                echo $message['titre'];
-                echo $message['contenu'];
-                echo $message['date'];
-                echo '</p>';
-            }
-        ?>
         <!-- Pour envoyer un message -->
         <?php 
             if (isset($_SESSION['userid'])) {
@@ -44,8 +33,32 @@
         <?php
             } else {
         ?>
-            Vous devez être connecté pour participer
+            <p class="erreur">Vous devez être connecté pour participer</p>
         <?php
+            }
+        ?>
+        <!-- Pour afficher tous les messages -->
+        <?php
+            foreach ($listMessages as $message) {
+                echo '<section class="post">';
+                    echo '<div class="toppost">';
+                        echo '<div class="pseudo">';
+                        echo $message['pseudo'];
+                        echo '</div>';
+                        echo '<div class="titremessage">';
+                        echo $message['titre']."<br>";
+                        echo '</div>';
+                    echo '</div>';
+                    echo '<hr class="separation">';
+                    echo '<div class="bottompost">';
+                        echo '<div class="contenu">';
+                        echo $message['contenu']."<br>";
+                        echo'</div>';
+                        echo '<div class="date">';
+                        echo $message['date'];
+                        echo '</div>';
+                    echo '</div>';
+                echo '</section>';
             }
         ?>
     </main>

@@ -28,7 +28,7 @@
         }
     }
 
-    $pageTitle = 'Accueil';
+    $pageTitle = 'Inscription';
     require_once('includes/headconnexion.php');
 ?>
         <section class="inscription">
@@ -54,17 +54,19 @@
                         <p class="asterisk">CONFIRMER LE MOT DE PASSE</p>
                         <input type="Password" name="Password2">
                     </div>
-                    <input type="submit" value="S'inscrire" name="Subscribe">
-                    <a href="connexion.php" class="retourconnexion">J'ai déjà un compte</a>
                     <?php 
-                    if ($error === true) {
+                    if ($error == true) {
+                        echo '<p class="erreur">';
                         if(!($_POST['Password2']===$_POST['Password'])){
                             echo "Confirmation du mot de passe incorrect";
                         }else{
-                            echo '<p class="erreur">Veuillez remplir toutes les informations</p>';
+                            echo 'Veuillez remplir toutes les informations';
                         }
+                        echo '</p>';
                     }
                     ?>
+                    <input type="submit" value="S'inscrire" name="Subscribe">
+                    <a href="connexion.php" class="retourconnexion">J'ai déjà un compte</a>
                 </form>
             </main>
         </section>

@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/pages.css">
     <title><?php echo $pageTitle; ?></title>
+    <!-- A VERIFIER -->
+    <link rel="icon" href="images/favicon.ico" type="icone">
     <!--Police d'écriture Dancing-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

@@ -37,7 +37,7 @@
         <main>
             <!-- lignes à changer pour être en php -->
             <form action="connexion.php" method="POST">
-                <div class="input2">
+                <div class="input">
                     <p>EMAIL</p>
                     <input type="email" name="Email" value="<?php echo $email; ?>"><br>
                 </div>
@@ -45,6 +45,13 @@
                     <p>MOT DE PASSE</p>
                     <input type="password" name="Password">
                 </div>
+                <?php
+                    if($error == true) {
+                        echo '<p class="erreur">';
+                        echo 'Informations remplies incorrectes';
+                        echo '</p>';
+                    }
+                ?>
                 <div id=Connexion>
                     <input type="submit" name="Connexion" Value="Se connecter" id="button">
                 </div>

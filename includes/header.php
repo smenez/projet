@@ -11,19 +11,19 @@
         <li><a href="forum.php">Forum</a></li>
         <li><a href="announcement.php">Announcement</a></li>
     </ul>
-    <button><img src="https://cdn-icons-png.flaticon.com/512/10080/10080458.png" alt="Menu déroulant"></button>
-    <nav>
+    <nav class="menuconnexion">
         <ul>
             <?php
                 if (isset($_SESSION['userid'])) {
-                    echo '<li><button><a href="deconnexion.php">Déconnexion</a></button></li>';
+                    echo '<li><button class="interaction"><a href="deconnexion.php">Déconnexion</a></button></li>';
                 } else {
                     echo 
-                        "<li><button><a href=\"connexion.php\">Connexion</a></button></li>
-                        <li><button><a href=\"inscription.php\">S'inscrire</a></button></li>"
+                    "<li><button class=\"interaction\"><a href=\"connexion.php\">Connexion</a></button></li>
+                    <li><button class=\"interaction\"><a href=\"inscription.php\">S'inscrire</a></button></li>"
                     ;
                 }
-            ?>
+                ?>
         </ul>
     </nav>
+    <button><img src="https://cdn-icons-png.flaticon.com/512/10080/10080458.png" alt="Menu déroulant"></button>
 </header>
