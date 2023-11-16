@@ -11,6 +11,13 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+document.querySelector('header > button').addEventListener('click', function() {
+    const nav = document.querySelector('nav');
+    nav.classList.toggle('show');
+  })
+
+
+
 /*document.addEventListener('DOMContentLoaded', function(){
     let connexionButton = document.getElementById("Menu");
     

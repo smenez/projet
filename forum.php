@@ -19,8 +19,9 @@
     require_once('includes/head.php');
     require_once('includes/header.php');
 ?>
-    <main>
+    <main id=forum>
         <h1>Forum</h1>
+        <!-- Pour afficher tous les messages -->
         <?php
             foreach ($listMessages as $message) {
                 echo '<p>';
@@ -31,6 +32,7 @@
                 echo '</p>';
             }
         ?>
+        <!-- Pour envoyer un message -->
         <?php 
             if (isset($_SESSION['userid'])) {
         ?>

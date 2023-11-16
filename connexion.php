@@ -27,7 +27,7 @@
         }
     }
 
-    $pageTitle = 'Accueil';
+    $pageTitle = 'Connexion';
     require_once('includes/headconnexion.php');
 ?>
     <section>
@@ -37,7 +37,7 @@
         <main>
             <!-- lignes à changer pour être en php -->
             <form action="connexion.php" method="POST">
-                <div class="input">
+                <div class="input2">
                     <p>EMAIL</p>
                     <input type="email" name="Email" value="<?php echo $email; ?>"><br>
                 </div>

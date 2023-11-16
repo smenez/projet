@@ -4,7 +4,7 @@
     require_once('includes/head.php');
     require_once('includes/header.php');
 ?>
-    <main>
+    <main id="index">
         <section class="block_top">
             <div class="titre">
                 <h1>Prémices</h1>

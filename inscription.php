@@ -6,11 +6,13 @@
     $email = '';
     $error = false;
 
+    
+
     if (isset($_POST['Subscribe'])) {
         $pseudo = $_POST['Pseudo'];
         $email = $_POST['Email'];
 
-        if (!empty($pseudo) && !empty($email) && filter_var($email, FILTER_VALIDATE_EMAIL) !== false && !empty($_POST['Password'])) {
+        if (!empty($pseudo) && !empty($email) && filter_var($email, FILTER_VALIDATE_EMAIL) !== false && !empty($_POST['Password']) && !empty($_POST['Password2']) && $_POST['Password2']===$_POST['Password']) {
             $password = password_hash($_POST['Password'], PASSWORD_DEFAULT);
             
             $sql = "INSERT INTO user (pseudo, email, password) VALUE (:pseudo, :email, :password)";
@@ -27,19 +29,44 @@
     }
 
     $pageTitle = 'Accueil';
-    require_once('includes/head.php');
+    require_once('includes/headconnexion.php');
 ?>
-    <main>
-        <form action="inscription.php" method="POST">
-            <input type="text" name="Pseudo" placeholder="Pseudo" value="<?php echo $pseudo; ?>"><br>
-            <input type="email" name="Email" placeholder="Email" value="<?php echo $email; ?>"><br>
-            <input type="password" name="Password" placeholder="Mot de passe"><br>
-            <input type="submit" name="Subscribe" placeholder="S'inscrire">
-            <?php 
-                if ($error === true) {
-                    echo '<p class="erreur">Veuillez remplir toutes les informations</p>';
-                }
-            ?>
-        </form>
-    </main>
-<?php require_once('includes/footer.php'); ?>
+        <section class="inscription">
+            <header>
+                <h1>Créer un compte</h1>
+            </header>
+            <main>
+                <!-- lignes à changé pour être en php -->
+                <form id="Onglet" action="inscription.php" method="POST">
+                    <div class="input">
+                        <p>PSEUDO</p>
+                        <input type="text" name="Pseudo" value="<?php echo $pseudo; ?>"><br>
+                    </div>
+                    <div class="input">
+                        <p class="asterisk">ADRESSE MAIL</p>
+                        <input type="email" name="Email" value="<?php echo $email; ?>"><br>
+                    </div>
+                    <div class="input">
+                        <p class="asterisk">MOT DE PASSE</p>
+                        <input type="password" name="Password">
+                    </div>
+                    <div class="input">
+                        <p class="asterisk">CONFIRMER LE MOT DE PASSE</p>
+                        <input type="Password" name="Password2">
+                    </div>
+                    <input type="submit" value="S'inscrire" name="Subscribe">
+                    <a href="connexion.php" class="retourconnexion">J'ai déjà un compte</a>
+                    <?php 
+                    if ($error === true) {
+                        if(!($_POST['Password2']===$_POST['Password'])){
+                            echo "Confirmation du mot de passe incorrect";
+                        }else{
+                            echo '<p class="erreur">Veuillez remplir toutes les informations</p>';
+                        }
+                    }
+                    ?>
+                </form>
+            </main>
+        </section>
+    </body>
+</html>

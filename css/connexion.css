@@ -35,7 +35,7 @@ h1{
     display: none;
 }
 
-.input{ 
+.input2{ 
     margin-bottom: 20px;
     margin-left: 10%;
 }
@@ -45,7 +45,7 @@ p{
     font-size: 15px;
 }
 
-.input input{
+.input2 input{
     width: 90%;
     height: 30px;
     background-color: rgb(40, 40, 40);
@@ -69,4 +69,65 @@ p{
 
 #button:hover{
     background: linear-gradient(to right, rgb(228, 169, 22), rgb(255, 197, 0))
+}
+
+/* Inscription */
+.inscription{
+    background-color: rgb(29, 29, 29);
+    height: 600px;
+    width: 30%;
+    margin: auto;
+    margin-top: 9%;
+    
+}
+
+.input{
+    margin-bottom: 20px;
+    margin-left: 10%;
+}
+.input input{
+    width: 90%;
+    height: 30px;
+    background-color: rgb(40, 40, 40);
+    text-align: left;
+    border: none;
+    padding: 5px;  /*pour qu'on voit le début de la saisie de texte*/
+    caret-color: goldenrod; /*change la couleur du curseur*/
+}
+
+.input p{
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+.asterisk::after {
+    content: ""; /* Contenu de l'astérisque */
+    color: goldenrod; 
+    margin-right: 5px;
+}
+
+input[type="submit"]{
+    margin: 0% 30% 0% 30%;
+    width: 40%;
+    height: 50px;
+    background: linear-gradient(to right, rgb(218, 159, 32), rgb(255, 187, 0));
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+input[type="submit"]:hover{
+    background: linear-gradient(to right, rgb(228, 169, 22), rgb(255, 197, 0));
+}
+
+.retourconnexion {
+    display: block; /* Permet d'occuper toute la largeur du conteneur parent */
+    text-align: center; 
+    color: goldenrod; 
+    text-decoration: none; 
+    margin-top: 10px; 
+}
+
+.retourconnexion:hover {
+    color: rgb(255, 197, 0); /* Couleur du texte au survol */
 }
