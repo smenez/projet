@@ -1,3 +1,16 @@
+document.addEventListener('DOMContentLoaded', function() {
+    const button = document.querySelector('header > button');
+    const nav = document.querySelector('nav');
+
+    button.addEventListener('click', function(){
+        if (nav.style.display === 'block') {
+            nav.style.display = 'none';
+        } else {
+            nav.style.display = 'block';
+        }
+    });
+});
+
 /*document.addEventListener('DOMContentLoaded', function(){
     let connexionButton = document.getElementById("Menu");
     
