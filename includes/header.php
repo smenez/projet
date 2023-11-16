@@ -7,7 +7,7 @@
         <li><a href="https://www.youtube.com/c/crateentertainment" target="_blank">Youtube</a></li>
         <li><a href="https://www.twitch.tv/crateentertainment" target="_blank">Twitch</a></li>
         <li><a href="https://twitter.com/crate_frontier" target="_blank">Twitter</a></li>
-        <li><a href="info.php">Mods</a></li>
+        <li><a href="info.php">Infos</a></li>
         <li><a href="forum.php">Forum</a></li>
         <li><a href="announcement.php">Announcement</a></li>
     </ul>

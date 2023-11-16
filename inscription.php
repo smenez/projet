@@ -37,7 +37,7 @@
             <input type="submit" name="Subscribe" placeholder="S'inscrire">
             <?php 
                 if ($error === true) {
-                    echo '<p class="erreur">Veuillez remplir toutes les informations</p>'
+                    echo '<p class="erreur">Veuillez remplir toutes les informations</p>';
                 }
             ?>
         </form>

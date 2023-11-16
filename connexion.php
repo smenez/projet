@@ -28,7 +28,7 @@
     }
 
     $pageTitle = 'Accueil';
-    require_once('includes/head.php');
+    require_once('includes/headconnexion.php');
 ?>
     <section>
         <header>
@@ -37,16 +37,6 @@
         <main>
             <!-- lignes à changer pour être en php -->
             <form action="connexion.php" method="POST">
-                <!-- QUESTION THOMAS -->
-
-                <?php
-
-                // on va chercher les données dans la base
-                // require_once "PDO.php";
-                // $sql = "SELECT * FROM user ORDER BY email_u DESC";
-                // $req = $db->query($sql);
-
-                ?>
                 <div class="input">
                     <p>EMAIL</p>
                     <input type="email" name="Email" value="<?php echo $email; ?>"><br>
@@ -61,4 +51,3 @@
             </form>
         </main>
     </section>
-<?php require_once('includes/footer.php'); ?>

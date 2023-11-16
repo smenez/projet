@@ -24,7 +24,7 @@
         <hr>
 
         <section class="paragraphe_image">
-            <div class="image"><img src="../images/fond_enneige.png" alt="Fond enneigé"></div>
+            <div class="image"><img src="images/fond_enneige.png" alt="Fond enneigé"></div>
             <div class="paragraphe">
                 <h2>Lorem, ipsum dolor.</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt ipsum laudantium unde iste corrupti expedita voluptatum! Dignissimos libero quo nemo tempore architecto saepe error accusantium unde incidunt debitis aliquam laboriosam magnam ratione nostrum voluptatem qui nulla molestias vel ipsa quas labore quis, consectetur tenetur! Quibusdam hic facere nemo sunt molestiae ipsam nam voluptates tempora! Iure consectetur, veritatis perferendis, similique temporibus fugiat minus voluptates dicta molestiae nam dolor tempore officiis voluptate atque hic ullam ex iste cumque! Labore soluta placeat doloremque?</p>
@@ -34,12 +34,12 @@
         <hr>
 
         <section class="paragraphe_image">
-            <div class="image_info"><img src="../images/block_bas_droit.png" alt=""></div>
+            <div class="image_info"><img src="images/block_bas_droit.png" alt=""></div>
             <div class="paragraphe_milieu"><h2>Lorem, ipsum dolor.</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt ipsum laudantium unde iste corrupti expedita voluptatum! Dignissimos libero quo nemo tempore architecto saepe error accusantium unde incidunt debitis aliquam laboriosam magnam ratione nostrum voluptatem qui nulla molestias vel ipsa quas labore quis, consectetur tenetur! Quibusdam hic facere nemo sunt molestiae ipsam nam voluptates tempora! Iure consectetur, veritatis perferendis, similique temporibus fugiat minus voluptates dicta molestiae nam dolor tempore officiis voluptate atque hic ullam ex iste cumque! Labore soluta placeat doloremque?</p></div>
             <div class="image_info">
-                <img src="../images/block_bas_gauche.png" alt="">
-                <img src="../images/block_bas_gauche2.png" alt="">
+                <img src="images/block_bas_gauche.png" alt="">
+                <img src="images/block_bas_gauche2.png" alt="">
             </div>
         </section>
     </main>
