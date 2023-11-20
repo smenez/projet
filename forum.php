@@ -22,43 +22,44 @@
     <main id=forum>
         <h1>Forum</h1>
         <!-- Pour envoyer un message -->
+        <!-- Pour afficher tous les messages -->
+        <?php
+        foreach ($listMessages as $message) {
+            echo '<section class="post">';
+                echo '<div class="toppost">';
+                    echo '<div class="pseudo">';
+                        echo $message['pseudo'];
+                    echo '</div>';
+                    echo '<div class="titremessage">';
+                        echo $message['titre']."<br>";
+                    echo '</div>';
+                echo '</div>';
+                echo '<hr class="separation">';
+                echo '<div class="bottompost">';
+                    echo '<div class="contenu">';
+                        echo $message['contenu']."<br>";
+                    echo'</div>';
+                    echo '<div class="date">';
+                        echo $message['date'];
+                    echo '</div>';
+                echo '</div>';
+            echo '</section>';
+            }
+        ?>
+        <h2>Répondre</h2>
         <?php 
             if (isset($_SESSION['userid'])) {
         ?>
             <form action="forum.php" method="POST">
-                <input type="text" name="titre" maxlength="100" required>
-                <textarea name="contenu" required></textarea>
-                <input type="submit" name="submit" value="Ok">
+                <input type="text" name="titre" maxlength="100" class="envoyerTitre" placeholder="Choisissez le titre du sujet" required><br>
+                <textarea name="contenu" class="envoyerContenu" placeholder="Laissez votre pensée vous guider..." required></textarea><br>
+                <input type="submit" name="submit" value="Envoyer" class="envoyerMessage">
             </form>
         <?php
             } else {
         ?>
             <p class="erreur">Vous devez être connecté pour participer</p>
         <?php
-            }
-        ?>
-        <!-- Pour afficher tous les messages -->
-        <?php
-            foreach ($listMessages as $message) {
-                echo '<section class="post">';
-                    echo '<div class="toppost">';
-                        echo '<div class="pseudo">';
-                        echo $message['pseudo'];
-                        echo '</div>';
-                        echo '<div class="titremessage">';
-                        echo $message['titre']."<br>";
-                        echo '</div>';
-                    echo '</div>';
-                    echo '<hr class="separation">';
-                    echo '<div class="bottompost">';
-                        echo '<div class="contenu">';
-                        echo $message['contenu']."<br>";
-                        echo'</div>';
-                        echo '<div class="date">';
-                        echo $message['date'];
-                        echo '</div>';
-                    echo '</div>';
-                echo '</section>';
             }
         ?>
     </main>

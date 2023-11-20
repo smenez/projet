@@ -53,6 +53,7 @@ p{
 }
 
 /* Inscription */
+
 .inscription{
     background-color: rgb(29, 29, 29);
     height: 600px;
@@ -66,6 +67,7 @@ p{
     margin-bottom: 20px;
     margin-left: 10%;
 }
+
 .input input{
     width: 90%;
     height: 30px;
