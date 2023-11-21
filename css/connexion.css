@@ -56,11 +56,10 @@ p{
 
 .inscription{
     background-color: rgb(29, 29, 29);
-    height: 600px;
+    height: 100%;
     width: 30%;
     margin: auto;
-    margin-top: 9%;
-    
+    margin-top: 5%;
 }
 
 .input{
@@ -108,7 +107,7 @@ input[type="submit"]:hover{
     text-align: center; 
     color: goldenrod; 
     text-decoration: none; 
-    margin-top: 10px; 
+    margin: 10px 10px; 
 }
 
 .retourconnexion:hover {

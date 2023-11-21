@@ -50,7 +50,7 @@
         <?php 
             if (isset($_SESSION['userid'])) {
         ?>
-            <form action="forum.php" method="POST">
+            <form action="forum.php" action="forumTitre.php" method="POST">
                 <input type="text" name="titre" maxlength="100" class="envoyerTitre" placeholder="Choisissez le titre du sujet" required><br>
                 <textarea name="contenu" class="envoyerContenu" placeholder="Laissez votre pensée vous guider..." required></textarea><br>
                 <input type="submit" name="submit" value="Envoyer" class="envoyerMessage">
