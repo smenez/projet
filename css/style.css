@@ -126,11 +126,21 @@ section {
     margin-bottom: 50px;
 }
 
+
+.erreur {
+    color: red;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+/* INDEX */
+
+
 #index {
     background-color: rgb(40, 40, 40);
     margin-top: 0px;
-    margin-left: 200px;
-    margin-right: 200px;
+    margin-left: 100px;
+    margin-right: 100px;
     padding-top: 120px;
 }
 
@@ -139,12 +149,6 @@ section {
     font-size: 40px;
     margin-bottom: 40px;
     font-weight: 400;
-}
-
-.erreur {
-    color: red;
-    text-align: center;
-    padding-bottom: 30px;
 }
 
 /* Announcements */
@@ -245,16 +249,27 @@ section {
 
 /* style du forum */
 
-#forum {
+.forum {
     background-color: rgb(40, 40, 40);
     margin-left: 200px;
     margin-right: 200px;
     padding-top: 120px;
 }
 
-#forum h2{
+.forum h2{
     margin-left: 15%;
     font-size: 40px;
+}
+
+.forum button{
+    width: 25%;
+    height: 30px;
+    background: linear-gradient(to right, rgb(218, 159, 32), rgb(255, 187, 0));
+    border: none;
+    cursor: pointer;
+    font-size: 18px; 
+    margin-bottom: 30px;
+    margin-left: 37.5%;
 }
 
  .post{
@@ -332,6 +347,53 @@ form{
     font-size: 18px; 
     margin-bottom: 10px;
     margin-left: 12.5%;
+}
+
+
+/* Page utilisateur */
+
+#user{
+    background-color: rgb(40, 40, 40);
+    margin: 0px 100px 0px 100px;
+    padding-top: 120px;
+}
+
+#user p{
+    font-size: 25px;
+    margin: 0px 100px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.modifier{
+    width: 40%;
+    height: 40px;
+    background: linear-gradient(to right, rgb(218, 159, 32), rgb(255, 187, 0));
+    border: none;
+    cursor: pointer;
+    font-size: 18px; 
+    margin-bottom: 30px;
+}
+
+.supprimer{
+    width: 40%;
+    height: 40px;
+    background: linear-gradient(to right, rgb(218, 159, 32), rgb(255, 187, 0));
+    border: none;
+    cursor: pointer;
+    font-size: 18px; 
+    margin-left: 42%;
+}
+
+.message_bouton ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 8%;
+}
+
+.message_bouton ul li{
+    width: 100%;
 }
 
 @media (max-width: 1024px) {

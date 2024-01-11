@@ -9,8 +9,8 @@
         <li><a href="https://twitter.com/crate_frontier" target="_blank">Twitter</a></li>
         <li><a href="info.php">Infos</a></li>
         <li><a href="forum.php">Forum</a></li>
-        <li><a href="post.php">Forum</a></li>
         <li><a href="announcement.php">Announcement</a></li>
+        <li><a href="user.php">Profil</a></li>
     </ul>
     <nav class="menuconnexion">
         <ul>

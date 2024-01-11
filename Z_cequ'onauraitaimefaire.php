@@ -1,3 +1,6 @@
-<!-- On aurait voulu rajouter un nom, prénom dans la base de donnée et l'afficher su une page profil utilisateur -->
+<!-- On aurait voulu rajouter un nom, prénom dans la base de donnée et l'afficher sur une page profil utilisateur avec tous les messages le concernant -->
 
-<!-- On aurait pu classifier les types de messages par titre -->
+<!-- Boutton supprimer les messages -->
+
+<!-- Faire une page post à part -->
+

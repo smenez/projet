@@ -20,9 +20,6 @@
             $password = password_hash($_POST['Password'], PASSWORD_DEFAULT);
             $sql = "INSERT INTO user (nom, prenom, pseudo, email, password) VALUE (:nom, :prenom, :pseudo, :email, :password)";
             $requete = $connexion->prepare($sql);
-            // $requete->bindValue(':pseudo_u',$pseudo);
-            // $requete->bindValue(':email_u',$email);
-            // $requete->bindValue(':motDePasse_u',$password);
             $resultat = $requete->execute([':nom' => $nom, ':prenom' => $prenom, ':pseudo' => $pseudo, ':email' => $email, ':password' => $password]);
 
             header('Location: connexion.php');

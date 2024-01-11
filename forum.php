@@ -19,7 +19,7 @@ $pageTitle = 'Forum';
 require_once('includes/head.php');
 require_once('includes/header.php');
 ?>
-<main id=forum>
+<main class="forum">
     <h1>Forum</h1>
     <!-- Pour envoyer un message -->
     <!-- Pour afficher tous les messages -->
