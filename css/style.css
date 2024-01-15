@@ -500,7 +500,7 @@ span{
     margin-left: 60%;
 }
 
-@media (max-width: 320px) {
+@media (max-width: 1920px) {
     header {
         padding: 0px;
         justify-content: space-between;
@@ -524,34 +524,60 @@ span{
     .header_cache > ul > li{
         display: none;
     }
-    .menuconnexion ul li{
+    .menuconnexion{
         display: block;
         position: fixed;
-        top: 22%;
-        transform: scale(2, 2) translate(-46%, 0%);
+        top: 14%;
+        right: 2%;
         padding: 20px;
         border: 1px solid #ccc;
-        background-color: rgb(32, 32, 32, 0.99);
+        background-color: rgb(32, 32, 32, 0.999);
         border-color: rgb(32, 32, 32);
         border-radius: 15px;
-        width: 90%;
-        height: 80%;
-        max-width: 190px;
-        max-height: 200px;
+        width: 95%;
+        max-width: 400px;
+        height: 260px;
         margin: 0%;
     }
     .menuconnexion button{
-        width: 42px;
-        height: 10px;
+        width: 60px;
+        height: 20px;
     }
     .menuconnexion a{
-        font-size: 7px;
-        display: inline-block;
+        font-size: 10px;
         width: 40px;
+        height: 30px;
+    }
+    .menuconnexion ul{
+        width: 30px;
         height: 15px;
     }
-    .cache a{
-        display: inline-block;
+    .menuconnexion ul li{
+        margin: 0px;
+    }
+
+    .cache{
+        display: flex;
+        width: 300px;
+        height: 200px;
+        margin: 0px;
+        padding: 20;
+    }
+    .cache ul{
+        width: 30px;
+        height: 15px;
+    }
+    .cache ul li{
+        width: 50px;
+    }
+    .flyout-1{
+        display: flex;
+    }
+    .flyout-1-1{
+        justify-content: space-between;
+    }
+    .flyout-1-2{
+        justify-content: space-between;
     }
     .contact-us img {
         width: 75px;
