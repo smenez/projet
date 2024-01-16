@@ -45,11 +45,9 @@ if (isset($_SESSION['userid'])) {
             $requeteUpdate->execute();
         }
     }    
-?>
+    ?>
     <main id="user">
-        <section>
-            <h1>Profil de l'utilisateur</h1>
-        </section>
+    <h1>Profil de l'utilisateur</h1>
 <?php
 if ($user) {
     echo "<p>Bienvenue <span>{$user['nom']} {$user['prenom']}</span> sur votre page utilisateur, vous pouvez ici voir les messages que vous avez envoyés. <br> Vous pouvez les modifier à votre guise.</p>";
@@ -83,10 +81,8 @@ if ($user) {
             </div>
         </section>
         <section class="message_bouton">
-            <ul>
-                <li><button class="modifier" data-message-id="<?php echo $message['id']; ?>">Modifier le message</button></li>
-                <li><button class="supprimer" data-message-id="<?php echo $message['id']; ?>">Supprimer le message</button></li>
-            </ul>
+            <button class="supprimer" data-message-id="<?php echo $message['id']; ?>">Supprimer le message</button>
+            <button class="modifier" data-message-id="<?php echo $message['id']; ?>">Modifier le message</button>
         </section>
         <section class="pop_up_del">
             <div class="alert-content">
@@ -94,7 +90,9 @@ if ($user) {
                 <p>Voulez vous vraiment supprimer le message?</p>
                 <form action="user.php" method="POST">
                 <input type="hidden" name="message_id" id="message_id_del" value="">
-                <input type="submit" name="supprimer_message" class="supprimer_message" value="Supprimer">
+                <div class="button_del">
+                    <input type="submit" name="supprimer_message" class="supprimer_message" value="Supprimer">
+                </div>
                 </form>
             </div>
         </section>

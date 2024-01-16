@@ -30,10 +30,8 @@
     $pageTitle = 'Connexion';
     require_once('includes/headconnexion.php');
 ?>
-    <section>
-        <header>
-            <h1>Connexion</h1>
-        </header>
+    <section id=connexion>
+        <h1>Connexion</h1>
         <main>
             <!-- lignes à changer pour être en php -->
             <form action="connexion.php" method="POST">
@@ -56,5 +54,6 @@
                     <input type="submit" name="Connexion" Value="Se connecter" id="button">
                 </div>
             </form>
+            <a href="index.php">Retour à la page d'accueil</a>
         </main>
     </section>

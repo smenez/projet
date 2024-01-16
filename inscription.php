@@ -31,10 +31,8 @@
     $pageTitle = 'Inscription';
     require_once('includes/headconnexion.php');
 ?>
-        <section class="inscription">
-            <header>
-                <h1>Créer un compte</h1>
-            </header>
+        <section>
+            <h1>Créer un compte</h1>
             <main>
                 <!-- lignes à changé pour être en php -->
                 <form id="Onglet" action="inscription.php" method="POST">

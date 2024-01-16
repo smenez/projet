@@ -9,6 +9,56 @@ body {
     color: white;
 }
 
+/* GLOBAL */
+main{
+    background-color: rgb(40, 40, 40);
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+hr {
+    width: 80%;
+    margin: auto;
+}
+
+img {
+    height: 100px;
+    width: auto;
+}
+
+header li {
+    display: inline-block;
+    margin: 20px;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+h1 {
+    text-align: center;
+    font-size: 60px;
+    padding-bottom: 20px;
+    padding-top: 120px;
+}
+
+section {
+    padding: 30px;
+    margin-bottom: 50px;
+}
+
+
+.erreur {
+    color: red;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+span{
+    color: goldenrod;
+}
+
 /* HEADER */
 header {
     position: fixed;
@@ -37,7 +87,7 @@ header ul {
     list-style-type: none;
 }
 
-header li::first-letter, h1::first-letter, h2::first-letter {
+header li::first-letter, h1::first-letter, h2::first-letter{
     color: goldenrod;
     font: 150% 'Dancing Script', cursive;
 }
@@ -65,9 +115,6 @@ nav ul {
 }
 
 .interaction{
-    margin: 5% 30% 0% 30%;
-    width: 115%;
-    height: 30px;
     background: linear-gradient(to right, rgb(218, 159, 32), rgb(255, 187, 0));
     border: none;
     cursor: pointer;
@@ -98,58 +145,16 @@ footer {
     height: 100px; /* Adjust the height as needed for the middle logos */
 }
 
-/* GLOBAL */
-hr {
-    width: 80%;
-    margin: auto;
-}
-
-img {
-    height: 100px;
-    width: auto;
-}
-
-header li {
-    display: inline-block;
-    margin: 20px;
-}
-
-a {
-    color: white;
-    text-decoration: none;
-}
-
-h1 {
-    text-align: center;
-    font-size: 60px;
-    padding-bottom: 20px;
-}
-
-section {
-    padding: 30px;
-    margin-bottom: 50px;
-}
-
-
-.erreur {
-    color: red;
-    text-align: center;
-    padding-bottom: 30px;
-}
-
-span{
-    color: goldenrod;
+header hr{
+    width: 95%;
+    margin: 5px 0px;
 }
 
 /* INDEX */
 
 
 #index {
-    background-color: rgb(40, 40, 40);
-    margin-top: 0px;
-    margin-left: 100px;
     margin-right: 100px;
-    padding-top: 120px;
 }
 
 #index h2 {
@@ -159,18 +164,78 @@ span{
     font-weight: 400;
 }
 
+.titre {
+    margin-left: 300px;
+    margin-right: 300px;
+    padding-bottom: 0px;
+}
+
+.paragraphe_image {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.paragraphe {
+    width: 100%;
+    margin: 32px;
+}
+
+.image {
+    width: 100%;
+}
+
+.image img {
+    width: 100%;
+    height: auto;
+}
+
+.image2paragraphe {
+    display: flex;
+}
+
+.image_gauche {
+    height: 100%;
+    width: auto;
+}
+
+/* Pour modifier la taille du container */
+.image_info {
+    width: 25%;
+}
+
+/* pour remplir l'image sur l'espace du container */
+.image_info img {
+    width: 100%;
+    height: auto;
+}
+
+.paragraphe_milieu {
+    width: 50%;
+    margin: 30px;
+    padding-bottom: 20px;
+}
+
+/* Pour modifier la taille du container */
+#images_guerison {
+    width: 25%;
+}
+
+
+/* pour remplir l'image sur l'espace du container */
+#images_guerison img {
+    width: 100%;
+    height: auto;
+}
+
 /* Announcements */
 
 #announcement {
-    background-color: rgb(40, 40, 40);
-    margin-left: 200px;
-    margin-right: 200px;
-    padding: 100px 50px 30px 80px;
+    padding: 0px 50px 30px 80px;
+    margin: 0px 100px;
 }
 
 .Update h1 {
-    text-align: center;
-    font-size: 60px;
     padding-bottom: 0px;
     margin: 30px;
 }
@@ -198,8 +263,7 @@ span{
 /* Page Info */
 #info {
     background-color: rgb(40, 40, 40);
-    margin-left: 200px;
-    margin-right: 200px;
+    margin: 0px 100px;
     padding-top: 120px;
 }
 
@@ -214,12 +278,6 @@ span{
     padding-left: 20%;
     padding-right: 20%;
     padding-bottom: 7%;
-}
-
-.paragrapheInfo h1{
-    text-align: center;
-    font-size: 60px;
-    padding: 40px 0px 40px 0px;
 }
 
 .paragrapheInfo h2 {
@@ -259,14 +317,13 @@ span{
 
 .forum {
     background-color: rgb(40, 40, 40);
-    margin-left: 200px;
-    margin-right: 200px;
     padding-top: 120px;
 }
 
 .forum h2{
     margin-left: 15%;
     font-size: 40px;
+    margin-bottom: 20px;
 }
 
 .forum button{
@@ -363,7 +420,6 @@ span{
 #user{
     background-color: rgb(40, 40, 40);
     margin: 0px 100px 0px 100px;
-    padding-top: 120px;
 }
 
 #user > p{
@@ -373,44 +429,26 @@ span{
     padding-bottom: 50px;
 }
 
-.modifier{
-    width: 40%;
+.message_bouton{
+    display: flex;
+    justify-content: space-between;
+    padding: 0% 0% 0% 10%;
+    margin-top: 50px;
+    width: 90%;
+}
+
+.message_bouton button{
     height: 40px;
     background: linear-gradient(to right, rgb(218, 159, 32), rgb(255, 187, 0));
     border: none;
     cursor: pointer;
     font-size: 18px;
+    margin-bottom: 40px;
 }
 
-.modifier:hover{
+.message_bouton button:hover{
     background: linear-gradient(to right, rgb(228, 169, 22), rgb(255, 197, 0))
 }
-
-.supprimer{
-    width: 40%;
-    height: 40px;
-    background: linear-gradient(to right, rgb(218, 159, 32), rgb(255, 187, 0));
-    border: none;
-    cursor: pointer;
-    font-size: 18px; 
-    margin-left: 42%;
-}
-
-.supprimer:hover{
-    background: linear-gradient(to right, rgb(228, 169, 22), rgb(255, 197, 0))
-}
-
-.message_bouton ul{
-    list-style-type: none;
-    display: flex;
-    justify-content: space-between;
-    margin-left: 8%;
-}
-
-.message_bouton ul li{
-    width: 100%;
-}
-
 
 /* Alert button supprimer*/
 
@@ -438,6 +476,11 @@ span{
     text-align: center;
     margin-bottom: 20px;
 }
+
+.button_del{
+    display: flex;
+    justify-content: space-around;
+}
   
 .close-btn {
     position: absolute;
@@ -448,12 +491,13 @@ span{
 
 .supprimer_message{
     width: 40%;
-    height: 20px;
+    min-width: 90px;
+    max-width: 220px;
     background: linear-gradient(to right, rgb(218, 159, 32), rgb(255, 187, 0));
     border: none;
     cursor: pointer;
-    font-size: 18px; 
-    margin-left: 30%;
+    font-size: 18px;
+    align-items: center;
 }
 
 
@@ -471,6 +515,7 @@ span{
     border: 1px solid #ccc;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     background-color: #3a3737;
+    min-width: 280px;
 }
 
 .close-btn-modify {
@@ -499,11 +544,11 @@ span{
     font-size: 18px; 
     margin-left: 60%;
 }
-
-@media (max-width: 1920px) {
+@media (max-width: 1440px){
     header {
         padding: 0px;
-        justify-content: space-between;
+        margin: 0px 100px;
+        width: calc(100% - 200px);
     }
     header img{
         width: 90%;
@@ -515,72 +560,156 @@ span{
     header button{
         width: 40px;
         height: 40px;
-        margin: 15px 7px 0px 0px;
-    }
-    #index{
-        margin: 0px;
-        padding-top: 70px;
     }
     .header_cache > ul > li{
         display: none;
     }
+    h1{
+        padding-top: 0px;
+    }
     .menuconnexion{
-        display: block;
+        display: none;
         position: fixed;
-        top: 14%;
-        right: 2%;
-        padding: 20px;
+        top: 11%;
+        right: 120px;
+        padding: 15px;
         border: 1px solid #ccc;
         background-color: rgb(32, 32, 32, 0.999);
         border-color: rgb(32, 32, 32);
         border-radius: 15px;
         width: 95%;
         max-width: 400px;
-        height: 260px;
+        height: 330px;
         margin: 0%;
-    }
-    .menuconnexion button{
-        width: 60px;
-        height: 20px;
     }
     .menuconnexion a{
         font-size: 10px;
         width: 40px;
         height: 30px;
     }
-    .menuconnexion ul{
-        width: 30px;
-        height: 15px;
+    .interaction{
+        width: 80px;
+        height: 25px;
     }
-    .menuconnexion ul li{
-        margin: 0px;
+    .interaction a{
+        font-size: 14px;
     }
-
     .cache{
-        display: flex;
-        width: 300px;
-        height: 200px;
+        display: block;
+        width: 100%;
+        max-width: 400px;
         margin: 0px;
-        padding: 20;
+        padding: 0px;
     }
-    .cache ul{
-        width: 30px;
-        height: 15px;
+    .cache h2{
+        font-size: 25px;
+        text-align: left;
+        margin-bottom: 5px;
     }
-    .cache ul li{
-        width: 50px;
+    .cache a{
+        display: block;
+        font-size: 20px;
     }
-    .flyout-1{
-        display: flex;
+    .flyout{
+        margin-bottom: 15px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        column-gap: 30px;
     }
-    .flyout-1-1{
-        justify-content: space-between;
+    .connect-button{
+        float: right;
     }
-    .flyout-1-2{
-        justify-content: space-between;
+    /* index */
+    #index{
+        padding-top: 70px;
+    }
+    .titre {
+        margin-right: 0px;
+        margin-left: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    /* info */
+    #info{
+        padding-top: 90px;
+    }
+    .paragrapheInfo{
+        margin: 0px;
+        display: block;
+    }
+    /* forum */
+    .forum{
+        padding-top: 90px;
+    }
+    .titremessage{
+        font-size: 30px;
+    }
+    .date{
+        font-size: 15px;
+    }
+    #announcement{
+        padding: 90px 20px 30px 20px;
+    }
+    .Update p{
+        width: 100%;
+    }
+    #user{
+        padding-top: 120px;
+    }
+}
+@media (max-width: 1024px) {
+    header{
+        width: 100%;
+        margin: 0px;
+    }
+    .menuconnexion{
+        right: 10px;
     }
     .contact-us img {
-        width: 75px;
-        height: 75px;
+        width: 70px;
+        height: 70px;
+    }
+    h1{
+        font-size: 40px;
+    }
+    /* index */
+    #index{
+        margin: 0px;
+    }
+    .paragraphe_image {
+        flex-direction: column;
+        margin: 20px 0px 20px 0px;
+    }
+    .paragraphe_image>* {
+        width: 75%;
+    }
+    /* user */
+    #user{
+        margin: 0px;
+    }
+    #user p{
+        margin: 10px;
+    }
+    .supprimer{
+        width: auto;
+        height: auto;
+    }
+
+    /* tout le reste */
+    #info{
+        margin: 0px;
+    }
+    .forum{
+        margin: 0px;
+    }
+    #announcement{
+        margin: 0px;
+    }
+}
+@media (max-width: 450px){
+    .message_bouton button{
+        display: block;
+        width: 100%;
     }
 }

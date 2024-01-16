@@ -25,7 +25,7 @@ section {
     margin-top: 12%;
 }
 
-header li::first-letter, h1::first-letter, h2::first-letter {
+h1::first-letter, h2::first-letter {
     color: goldenrod;
     font: 150% 'Dancing Script', cursive;
 }
@@ -47,6 +47,14 @@ p{
     font-size: 15px;
 }
 
+a{
+    display: block; /* Permet d'occuper toute la largeur du conteneur parent */
+    text-align: center; 
+    color: goldenrod; 
+    text-decoration: none; 
+    padding-bottom: 10px;
+}
+
 .checkbox{
     border: none;
     margin-left: 10%;
@@ -54,12 +62,13 @@ p{
 
 /* Inscription */
 
-.inscription{
+section{
     background-color: rgb(29, 29, 29);
     height: 100%;
-    width: 30%;
+    width: 40%;
     margin: auto;
-    margin-top: 5%;
+    margin-top: 10%;
+    border-radius: 20px;
 }
 
 .input{
@@ -75,6 +84,7 @@ p{
     border: none;
     padding: 5px;  /*pour qu'on voit le début de la saisie de texte*/
     caret-color: goldenrod; /*change la couleur du curseur*/
+    color: goldenrod;
 }
 
 .input p{
@@ -89,7 +99,7 @@ p{
 }
 
 input[type="submit"]{
-    margin: 0% 30% 0% 30%;
+    margin: 0% 30% 3% 30%;
     width: 40%;
     height: 50px;
     background: linear-gradient(to right, rgb(218, 159, 32), rgb(255, 187, 0));
@@ -102,14 +112,29 @@ input[type="submit"]:hover{
     background: linear-gradient(to right, rgb(228, 169, 22), rgb(255, 197, 0));
 }
 
-.retourconnexion {
-    display: block; /* Permet d'occuper toute la largeur du conteneur parent */
-    text-align: center; 
-    color: goldenrod; 
-    text-decoration: none; 
-    margin: 10px 10px; 
-}
-
 .retourconnexion:hover {
     color: rgb(255, 197, 0); /* Couleur du texte au survol */
+}
+
+@media(max-width: 1440px){
+    body{
+        background-color: rgb(29, 29, 29);
+        background-image: none;
+    }
+    section{
+        background-color: rgb(40, 40, 40);
+        width: 80%;
+    }
+    .input input{
+        background-color: rgb(29, 29, 29);
+        color: goldenrod;
+    }
+    #connexion{
+        margin-top: 150px;
+    }
+}
+@media(max-width: 1024px){
+    section{
+        width: calc(100% - 32px);
+    }
 }
